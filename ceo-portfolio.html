@@ -1,0 +1,2898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pornima Umbarkar - Senior Finance Professional with 12+ years of experience in Finance, Banking, Mortgage Loans, and Business Development.">
+    <meta name="keywords" content="Finance Professional, Mortgage Loans, Home Loans, Banking, Financial Consulting, Portfolio">
+    <meta name="author" content="Pornima Umbarkar">
+    <title>Pornima Umbarkar | Senior Finance Professional</title>
+
+    <!-- ===================== Google Fonts - Poppins ===================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ===================== CSS Styles ===================== -->
+    <style>
+        /* ============================================
+           CSS CUSTOM PROPERTIES (Design Tokens)
+           ============================================ */
+        :root {
+            /* Primary Colors - Corporate Blue */
+            --primary-dark: #0a1628;
+            --primary: #0d2240;
+            --primary-medium: #14355e;
+            --primary-light: #1a4a80;
+            --primary-lighter: #2563a8;
+
+            /* Accent Colors - Gold */
+            --gold: #c9a84c;
+            --gold-light: #e0c76e;
+            --gold-dark: #a88a3a;
+            --gold-glow: rgba(201, 168, 76, 0.3);
+
+            /* Neutral Colors */
+            --white: #ffffff;
+            --off-white: #f4f6f9;
+            --light-gray: #e8ecf1;
+            --medium-gray: #8899aa;
+            --dark-gray: #4a5568;
+
+            /* Gradients */
+            --gradient-hero: linear-gradient(160deg, #0a1628 0%, #0d2240 30%, #14355e 60%, #1a4a80 100%);
+            --gradient-gold: linear-gradient(135deg, #c9a84c, #e0c76e, #c9a84c);
+            --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+            --gradient-blue: linear-gradient(135deg, #0d2240, #2563a8);
+
+            /* Shadows */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.18);
+            --shadow-gold: 0 4px 20px rgba(201, 168, 76, 0.25);
+
+            /* Typography */
+            --font-family: 'Poppins', sans-serif;
+
+            /* Spacing */
+            --section-padding: 100px 0;
+            --container-width: 1200px;
+
+            /* Transitions */
+            --transition-fast: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-medium: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ============================================
+           CSS RESET & BASE STYLES
+           ============================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--dark-gray);
+            background-color: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.3;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-fast);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================
+           SCROLL REVEAL ANIMATION CLASSES
+           ============================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.85);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal-scale.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Staggered children animation delays */
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+        .stagger-5 { transition-delay: 0.5s; }
+        .stagger-6 { transition-delay: 0.6s; }
+
+        /* ============================================
+           KEYFRAME ANIMATIONS
+           ============================================ */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+
+        @keyframes rotateGlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes progressFill {
+            from { width: 0%; }
+        }
+
+        @keyframes countUp {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes borderGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(201, 168, 76, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(201, 168, 76, 0.6); }
+        }
+
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            0%, 100% { border-color: transparent; }
+            50% { border-color: var(--gold); }
+        }
+
+        @keyframes particleFloat {
+            0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translate(var(--tx), var(--ty)) rotate(720deg); opacity: 0; }
+        }
+
+        /* ============================================
+           NAVIGATION BAR
+           ============================================ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: var(--transition-medium);
+            background: transparent;
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 12px 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .nav-logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.88rem;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            position: relative;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--gold);
+            background: rgba(201, 168, 76, 0.1);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 20px;
+            height: 2px;
+            background: var(--gold);
+            border-radius: 2px;
+            transition: var(--transition-fast);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+
+        /* Mobile Menu Toggle */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1001;
+        }
+
+        .nav-toggle span {
+            width: 28px;
+            height: 2.5px;
+            background: var(--white);
+            border-radius: 2px;
+            transition: var(--transition-fast);
+        }
+
+        .nav-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .nav-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--gradient-hero);
+            overflow: hidden;
+        }
+
+        /* Decorative Background Elements */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(37, 99, 168, 0.1) 0%, transparent 70%);
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        /* Floating decorative particles */
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--gold);
+            border-radius: 50%;
+            opacity: 0;
+            animation: particleFloat 12s linear infinite;
+        }
+
+        .particle:nth-child(1) { top: 20%; left: 10%; --tx: 100px; --ty: -200px; animation-delay: 0s; animation-duration: 10s; }
+        .particle:nth-child(2) { top: 60%; left: 80%; --tx: -150px; --ty: -300px; animation-delay: 2s; animation-duration: 14s; }
+        .particle:nth-child(3) { top: 40%; left: 30%; --tx: 200px; --ty: -150px; animation-delay: 4s; animation-duration: 11s; }
+        .particle:nth-child(4) { top: 80%; left: 60%; --tx: -100px; --ty: -250px; animation-delay: 1s; animation-duration: 13s; }
+        .particle:nth-child(5) { top: 10%; left: 70%; --tx: 50px; --ty: -180px; animation-delay: 3s; animation-duration: 9s; }
+        .particle:nth-child(6) { top: 50%; left: 90%; --tx: -200px; --ty: -100px; animation-delay: 5s; animation-duration: 15s; }
+        .particle:nth-child(7) { top: 70%; left: 20%; --tx: 150px; --ty: -350px; animation-delay: 6s; animation-duration: 12s; }
+        .particle:nth-child(8) { top: 30%; left: 50%; --tx: -80px; --ty: -200px; animation-delay: 7s; animation-duration: 10s; }
+
+        /* Geometric line decoration */
+        .hero-decoration {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgba(201, 168, 76, 0.1);
+            border-radius: 50%;
+            animation: rotateGlow 30s linear infinite;
+        }
+
+        .hero-decoration::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            border: 1px solid rgba(201, 168, 76, 0.06);
+            border-radius: 50%;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding-top: 80px;
+        }
+
+        /* Hero Text Content */
+        .hero-content {
+            color: var(--white);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(201, 168, 76, 0.12);
+            border: 1px solid rgba(201, 168, 76, 0.25);
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            margin-bottom: 24px;
+            animation: fadeInDown 0.8s ease forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .hero-title {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 8px;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
+
+        .hero-title .highlight {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.6s;
+            opacity: 0;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            margin-bottom: 36px;
+            max-width: 520px;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 0.8s;
+            opacity: 0;
+        }
+
+        /* Hero CTA Buttons */
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            font-family: var(--font-family);
+            font-size: 0.92rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            border: none;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: var(--gradient-gold);
+            color: var(--primary-dark);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(201, 168, 76, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(201, 168, 76, 0.08);
+            transform: translateY(-3px);
+        }
+
+        .btn-icon {
+            font-size: 1.1rem;
+        }
+
+        /* Hero Profile Image */
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.6s;
+            opacity: 0;
+        }
+
+        .profile-image-wrapper {
+            position: relative;
+            width: 380px;
+            height: 380px;
+        }
+
+        /* Rotating gold border ring */
+        .profile-image-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: -12px;
+            border-radius: 50%;
+            border: 2px dashed rgba(201, 168, 76, 0.3);
+            animation: rotateGlow 20s linear infinite;
+        }
+
+        .profile-image-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: var(--gradient-gold);
+            z-index: 0;
+            opacity: 0.6;
+        }
+
+        .profile-image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1;
+            background: var(--primary-medium);
+            animation: borderGlow 3s ease-in-out infinite;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--primary-dark);
+        }
+
+        /* Default avatar placeholder */
+        .profile-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(145deg, var(--primary-medium), var(--primary-light));
+            color: var(--gold);
+        }
+
+        .profile-placeholder .initials {
+            font-size: 5rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 4px;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .profile-placeholder .placeholder-text {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Upload button */
+        .upload-btn {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 10;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-gold);
+            border: 3px solid var(--primary-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .upload-btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 6px 25px rgba(201, 168, 76, 0.5);
+        }
+
+        .upload-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--primary-dark);
+        }
+
+        .upload-input {
+            display: none;
+        }
+
+        /* Hero Stats Bar */
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: 1.2s;
+            opacity: 0;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .hero-stat-label {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ============================================
+           SECTION COMMON STYLES
+           ============================================ */
+        .section {
+            padding: var(--section-padding);
+            position: relative;
+        }
+
+        .section-dark {
+            background: var(--gradient-hero);
+            color: var(--white);
+        }
+
+        .section-light {
+            background: var(--off-white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 18px;
+            background: rgba(201, 168, 76, 0.1);
+            border: 1px solid rgba(201, 168, 76, 0.2);
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .section-dark .section-tag {
+            background: rgba(201, 168, 76, 0.12);
+            border-color: rgba(201, 168, 76, 0.25);
+            color: var(--gold-light);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+        }
+
+        .section-dark .section-title {
+            color: var(--white);
+        }
+
+        .section-title .highlight {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--medium-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-dark .section-subtitle {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Decorative Gold Divider */
+        .gold-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-gold);
+            border-radius: 3px;
+            margin: 16px auto 0;
+        }
+
+        /* ============================================
+           ABOUT SECTION
+           ============================================ */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image-area {
+            position: relative;
+        }
+
+        .about-image-card {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-image-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(10, 22, 40, 0.8));
+            z-index: 1;
+        }
+
+        .about-visual {
+            width: 100%;
+            height: 460px;
+            background: var(--gradient-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .about-visual-content {
+            text-align: center;
+            color: var(--white);
+            z-index: 2;
+            position: relative;
+        }
+
+        .about-visual-icon {
+            font-size: 4rem;
+            margin-bottom: 16px;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .about-visual-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--gold-light);
+        }
+
+        /* Floating stats card on About image */
+        .about-floating-card {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--white);
+            border-radius: 16px;
+            padding: 20px 28px;
+            box-shadow: var(--shadow-lg);
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .about-floating-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: rgba(201, 168, 76, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .about-floating-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            line-height: 1;
+        }
+
+        .about-floating-label {
+            font-size: 0.75rem;
+            color: var(--medium-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* About Text Content */
+        .about-content h3 {
+            font-size: 1.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+        }
+
+        .about-content h3 span {
+            color: var(--gold);
+        }
+
+        .about-content p {
+            color: var(--dark-gray);
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        /* Personal Info Grid */
+        .about-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .about-info-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: var(--off-white);
+            border-radius: 12px;
+            transition: var(--transition-fast);
+        }
+
+        .about-info-item:hover {
+            background: rgba(201, 168, 76, 0.08);
+            transform: translateX(4px);
+        }
+
+        .about-info-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: rgba(201, 168, 76, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .about-info-label {
+            font-size: 0.72rem;
+            color: var(--medium-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-info-value {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        /* ============================================
+           EXPERIENCE TIMELINE SECTION
+           ============================================ */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Vertical line */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--gold), rgba(201, 168, 76, 0.2));
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 0 50px 0;
+            position: relative;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            align-self: flex-start;
+            padding-right: 50px;
+        }
+
+        .timeline-item:nth-child(even) {
+            align-self: flex-end;
+            margin-left: 50%;
+            padding-left: 50px;
+            justify-content: flex-start;
+        }
+
+        /* Timeline dot */
+        .timeline-dot {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: var(--gold);
+            border-radius: 50%;
+            border: 4px solid var(--primary-dark);
+            z-index: 2;
+            top: 8px;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -9px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -9px;
+        }
+
+        .timeline-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 28px;
+            backdrop-filter: blur(10px);
+            transition: var(--transition-fast);
+            position: relative;
+        }
+
+        .timeline-card:hover {
+            border-color: rgba(201, 168, 76, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .timeline-year {
+            display: inline-block;
+            padding: 4px 14px;
+            background: rgba(201, 168, 76, 0.15);
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--gold-light);
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .timeline-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 6px;
+        }
+
+        .timeline-company {
+            font-size: 0.88rem;
+            color: var(--gold);
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .timeline-desc {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.7;
+        }
+
+        .timeline-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 14px;
+        }
+
+        .timeline-tag {
+            padding: 4px 12px;
+            background: rgba(201, 168, 76, 0.1);
+            border-radius: 6px;
+            font-size: 0.72rem;
+            color: var(--gold-light);
+            font-weight: 500;
+        }
+
+        /* ============================================
+           SKILLS SECTION
+           ============================================ */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .skill-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-gray);
+            transition: var(--transition-fast);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-gold);
+            transform: scaleX(0);
+            transition: var(--transition-fast);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(201, 168, 76, 0.2);
+        }
+
+        .skill-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .skill-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .skill-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .skill-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(201, 168, 76, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+
+        .skill-name {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .skill-percentage {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--gold);
+        }
+
+        .skill-bar-track {
+            width: 100%;
+            height: 8px;
+            background: var(--off-white);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 8px;
+            background: var(--gradient-gold);
+            width: 0%;
+            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .skill-bar-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.4),
+                transparent
+            );
+            background-size: 200% 100%;
+            animation: shimmer 2s ease-in-out infinite;
+        }
+
+        /* ============================================
+           ACHIEVEMENTS / COUNTERS SECTION
+           ============================================ */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .achievement-card {
+            text-align: center;
+            padding: 40px 24px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: var(--transition-fast);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-gold);
+            border-radius: 0 0 3px 3px;
+            transition: var(--transition-fast);
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(201, 168, 76, 0.3);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .achievement-card:hover::before {
+            width: 100%;
+        }
+
+        .achievement-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            background: rgba(201, 168, 76, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 20px;
+        }
+
+        .achievement-number {
+            font-size: 2.8rem;
+            font-weight: 900;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .achievement-suffix {
+            font-size: 1.4rem;
+        }
+
+        .achievement-label {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 500;
+        }
+
+        /* ============================================
+           SERVICES SECTION
+           ============================================ */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 36px 28px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-gray);
+            transition: var(--transition-medium);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-gold);
+            transform: scaleX(0);
+            transition: var(--transition-fast);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(201, 168, 76, 0.08), rgba(201, 168, 76, 0.16));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+            transition: var(--transition-fast);
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--gradient-gold);
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .service-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+        }
+
+        .service-desc {
+            font-size: 0.88rem;
+            color: var(--medium-gray);
+            line-height: 1.7;
+        }
+
+        /* ============================================
+           KEY ACHIEVEMENTS SECTION (Detailed)
+           ============================================ */
+        .key-achievements-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .key-achievement-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 24px 28px;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--light-gray);
+            transition: var(--transition-fast);
+        }
+
+        .key-achievement-item:hover {
+            transform: translateX(8px);
+            border-color: rgba(201, 168, 76, 0.3);
+            box-shadow: var(--shadow-md);
+        }
+
+        .key-achievement-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(201, 168, 76, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .key-achievement-text h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .key-achievement-text p {
+            font-size: 0.88rem;
+            color: var(--medium-gray);
+            line-height: 1.6;
+        }
+
+        /* ============================================
+           CONTACT SECTION
+           ============================================ */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .contact-info {
+            color: var(--white);
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .contact-info h3 span {
+            color: var(--gold);
+        }
+
+        .contact-info > p {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 32px;
+            line-height: 1.8;
+        }
+
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            transition: var(--transition-fast);
+        }
+
+        .contact-item:hover {
+            border-color: rgba(201, 168, 76, 0.3);
+            background: rgba(201, 168, 76, 0.05);
+            transform: translateX(6px);
+        }
+
+        .contact-item-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            background: rgba(201, 168, 76, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-item-text h4 {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+            font-weight: 500;
+        }
+
+        .contact-item-text p {
+            font-size: 0.95rem;
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        /* Contact Form */
+        .contact-form-wrapper {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 36px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-form-wrapper h3 {
+            font-size: 1.3rem;
+            color: var(--white);
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 18px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: var(--white);
+            font-family: var(--font-family);
+            font-size: 0.92rem;
+            transition: var(--transition-fast);
+            outline: none;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .form-control:focus {
+            border-color: var(--gold);
+            background: rgba(201, 168, 76, 0.05);
+            box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background: var(--gradient-gold);
+            color: var(--primary-dark);
+            font-family: var(--font-family);
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--primary-dark);
+            padding: 30px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-text {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .footer-text span {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85rem;
+            transition: var(--transition-fast);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        /* ============================================
+           BACK TO TOP BUTTON
+           ============================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: var(--gradient-gold);
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: none;
+            box-shadow: var(--shadow-gold);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: var(--transition-fast);
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(201, 168, 76, 0.5);
+        }
+
+        /* ============================================
+           PRINT / PDF STYLES
+           ============================================ */
+        @media print {
+            .navbar,
+            .back-to-top,
+            .upload-btn,
+            .hero-particles,
+            .hero-decoration,
+            .contact-form-wrapper,
+            .hero-buttons,
+            .nav-toggle {
+                display: none !important;
+            }
+
+            body {
+                font-size: 12pt;
+                color: #000;
+                background: #fff;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 40px 0;
+                background: #0d2240 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .section {
+                padding: 40px 0;
+                page-break-inside: avoid;
+            }
+
+            .section-dark {
+                background: #0d2240 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .reveal,
+            .reveal-left,
+            .reveal-right,
+            .reveal-scale {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+
+            .skill-bar-fill {
+                width: var(--skill-width) !important;
+            }
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+
+        /* Tablet - Large */
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero-content {
+                order: 2;
+            }
+
+            .hero-image {
+                order: 1;
+            }
+
+            .hero-description {
+                margin: 0 auto 36px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .profile-image-wrapper {
+                width: 300px;
+                height: 300px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .achievements-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-decoration {
+                display: none;
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: rgba(10, 22, 40, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                justify-content: center;
+                gap: 8px;
+                padding: 20px;
+                transition: var(--transition-medium);
+                border-left: 1px solid rgba(201, 168, 76, 0.1);
+            }
+
+            .nav-links.open {
+                right: 0;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero-title {
+                font-size: 2.4rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                width: 100%;
+                margin-left: 0;
+                padding-left: 60px;
+                padding-right: 0;
+                justify-content: flex-start;
+            }
+
+            .timeline-dot,
+            .timeline-item:nth-child(odd) .timeline-dot,
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: 11px;
+                right: auto;
+            }
+
+            .about-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-floating-card {
+                right: 10px;
+                bottom: 10px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+            html {
+                font-size: 14px;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .profile-image-wrapper {
+                width: 240px;
+                height: 240px;
+            }
+
+            .hero-stats {
+                gap: 24px;
+                flex-wrap: wrap;
+            }
+
+            .hero-stat-number {
+                font-size: 1.6rem;
+            }
+
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .achievement-number {
+                font-size: 2.2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-header {
+                margin-bottom: 40px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .footer .container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="#hero" class="nav-logo">P<span>U</span></a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="hero">
+        <!-- Floating Particles -->
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- Geometric Decoration -->
+        <div class="hero-decoration"></div>
+
+        <div class="container">
+            <!-- Hero Text -->
+            <div class="hero-content">
+                <div class="hero-badge">✦ Senior Finance Professional</div>
+                <h1 class="hero-title">
+                    Pornima<br><span class="highlight">Umbarkar</span>
+                </h1>
+                <p class="hero-subtitle">Finance & Banking Expert | Business Leader</p>
+                <p class="hero-description">
+                    A highly experienced Finance Professional with 12+ years of expertise in 
+                    Finance and Banking, specializing in mortgage loans, financial consulting, 
+                    and business development. Proven track record of achieving ₹5 Crore monthly 
+                    business targets.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span class="btn-icon">✉</span> Get In Touch
+                    </a>
+                    <button class="btn btn-secondary" onclick="window.print()">
+                        <span class="btn-icon">⬇</span> Download Portfolio
+                    </button>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">12+</div>
+                        <div class="hero-stat-label">Years in Finance</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">₹5Cr</div>
+                        <div class="hero-stat-label">Monthly Target</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">2+</div>
+                        <div class="hero-stat-label">Years IT Marketing</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Profile Image -->
+            <div class="hero-image">
+                <div class="profile-image-wrapper">
+                    <div class="profile-image-container" id="profileImageContainer">
+                        <!-- Default Placeholder (replaced on image upload) -->
+                        <div class="profile-placeholder" id="profilePlaceholder">
+                            <div class="initials">PU</div>
+                            <div class="placeholder-text">Upload Photo</div>
+                        </div>
+                        <!-- Uploaded Image (hidden by default) -->
+                        <img src="" alt="Pornima Umbarkar - Senior Finance Professional" class="profile-image" id="profileImage" style="display: none;">
+                    </div>
+                    <!-- Upload Button -->
+                    <label class="upload-btn" for="imageUpload" title="Upload Profile Image">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </label>
+                    <input type="file" id="imageUpload" class="upload-input" accept="image/*">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">✦ About Me</div>
+                <h2 class="section-title">Know More <span class="highlight">About Me</span></h2>
+                <p class="section-subtitle">Dedicated finance professional committed to excellence in banking and financial services.</p>
+                <div class="gold-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- About Image / Visual -->
+                <div class="about-image-area reveal-left">
+                    <div class="about-image-card">
+                        <div class="about-visual">
+                            <div class="about-visual-content">
+                                <div class="about-visual-icon">🏦</div>
+                                <div class="about-visual-text">Finance & Banking</div>
+                                <p style="color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-top: 8px;">12+ Years of Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating Experience Card -->
+                    <div class="about-floating-card">
+                        <div class="about-floating-icon">🏆</div>
+                        <div>
+                            <div class="about-floating-number">14+</div>
+                            <div class="about-floating-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="about-content reveal-right">
+                    <h3>I'm <span>Pornima Umbarkar</span></h3>
+                    <p>
+                        A highly experienced Finance Professional with over 12 years of expertise in 
+                        the Finance and Banking industry, complemented by 2 years of experience in IT Marketing. 
+                        I specialize in mortgage loans, home loans, customer relationship management, 
+                        sales strategy, business development, financial consulting, and team leadership.
+                    </p>
+                    <p>
+                        Throughout my career, I have consistently achieved business targets, managed 
+                        high-performing teams, and built lasting client relationships. My passion lies 
+                        in delivering exceptional financial solutions while driving business growth and 
+                        customer satisfaction.
+                    </p>
+
+                    <!-- Personal Info -->
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <div class="about-info-icon">👤</div>
+                            <div>
+                                <div class="about-info-label">Full Name</div>
+                                <div class="about-info-value">Pornima Umbarkar</div>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <div class="about-info-icon">🎂</div>
+                            <div>
+                                <div class="about-info-label">Age</div>
+                                <div class="about-info-value">38 Years</div>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <div class="about-info-icon">🎓</div>
+                            <div>
+                                <div class="about-info-label">Education</div>
+                                <div class="about-info-value">Post Graduation</div>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <div class="about-info-icon">💼</div>
+                            <div>
+                                <div class="about-info-label">Experience</div>
+                                <div class="about-info-value">14+ Years Total</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Download Resume Button -->
+                    <a href="#" class="btn btn-primary" onclick="alert('Resume download will be available soon. Please contact for the latest resume.'); return false;">
+                        <span class="btn-icon">📄</span> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE SECTION ===================== -->
+    <section class="section section-dark" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">✦ Career Journey</div>
+                <h2 class="section-title">Professional <span class="highlight">Experience</span></h2>
+                <p class="section-subtitle">A timeline of growth, leadership, and financial expertise.</p>
+                <div class="gold-divider"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">2012 – Present</div>
+                        <h3 class="timeline-title">Senior Finance Professional</h3>
+                        <div class="timeline-company">UC Service Company</div>
+                        <p class="timeline-desc">
+                            Leading financial operations with specialization in mortgage and home loan 
+                            processing. Managing client relationships, driving business development, 
+                            and consistently achieving monthly targets of ₹5 Crore.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Mortgage Loans</span>
+                            <span class="timeline-tag">Team Leadership</span>
+                            <span class="timeline-tag">Sales</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">Key Responsibilities</div>
+                        <h3 class="timeline-title">Home Loan Processing & Consultation</h3>
+                        <div class="timeline-company">Finance Division</div>
+                        <p class="timeline-desc">
+                            Expert in home loan documentation, processing, and customer financial 
+                            consultation. Guiding clients through the entire loan lifecycle from 
+                            application to disbursement.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Home Loans</span>
+                            <span class="timeline-tag">Documentation</span>
+                            <span class="timeline-tag">Consultation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">Leadership & Growth</div>
+                        <h3 class="timeline-title">Sales & Business Development Lead</h3>
+                        <div class="timeline-company">UC Service Company</div>
+                        <p class="timeline-desc">
+                            Spearheading sales strategies, managing high-performing teams, and 
+                            expanding business through strong client relationship management and 
+                            strategic planning.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">Business Development</span>
+                            <span class="timeline-tag">CRM</span>
+                            <span class="timeline-tag">Strategy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">Prior Experience</div>
+                        <h3 class="timeline-title">IT Marketing Professional</h3>
+                        <div class="timeline-company">IT Industry</div>
+                        <p class="timeline-desc">
+                            2 years of experience in IT Marketing, building a strong foundation in 
+                            digital marketing strategies, client acquisition, and technology-driven 
+                            business solutions.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag">IT Marketing</span>
+                            <span class="timeline-tag">Digital Strategy</span>
+                            <span class="timeline-tag">Client Acquisition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section class="section section-light" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">✦ Expertise</div>
+                <h2 class="section-title">Professional <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle">Core competencies developed over 14+ years of professional experience.</p>
+                <div class="gold-divider"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card reveal stagger-1">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">🏠</div>
+                            <div class="skill-name">Mortgage Loan</div>
+                        </div>
+                        <div class="skill-percentage">95%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="95" style="--skill-width: 95%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card reveal stagger-2">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">🏦</div>
+                            <div class="skill-name">Home Loan</div>
+                        </div>
+                        <div class="skill-percentage">93%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="93" style="--skill-width: 93%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card reveal stagger-3">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">💰</div>
+                            <div class="skill-name">Financial Consulting</div>
+                        </div>
+                        <div class="skill-percentage">90%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="90" style="--skill-width: 90%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card reveal stagger-4">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">👥</div>
+                            <div class="skill-name">Team Management</div>
+                        </div>
+                        <div class="skill-percentage">92%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="92" style="--skill-width: 92%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="skill-card reveal stagger-5">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">📈</div>
+                            <div class="skill-name">Sales Management</div>
+                        </div>
+                        <div class="skill-percentage">88%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="88" style="--skill-width: 88%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="skill-card reveal stagger-6">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">🚀</div>
+                            <div class="skill-name">Business Development</div>
+                        </div>
+                        <div class="skill-percentage">91%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="91" style="--skill-width: 91%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 7 -->
+                <div class="skill-card reveal stagger-1">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">🤝</div>
+                            <div class="skill-name">Customer Relationship Management</div>
+                        </div>
+                        <div class="skill-percentage">94%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="94" style="--skill-width: 94%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 8 -->
+                <div class="skill-card reveal stagger-2">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">🏛️</div>
+                            <div class="skill-name">Banking Operations</div>
+                        </div>
+                        <div class="skill-percentage">89%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="89" style="--skill-width: 89%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 9 -->
+                <div class="skill-card reveal stagger-3">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">👔</div>
+                            <div class="skill-name">Leadership</div>
+                        </div>
+                        <div class="skill-percentage">90%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="90" style="--skill-width: 90%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 10 -->
+                <div class="skill-card reveal stagger-4">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">🗣️</div>
+                            <div class="skill-name">Communication Skills</div>
+                        </div>
+                        <div class="skill-percentage">92%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="92" style="--skill-width: 92%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 11 -->
+                <div class="skill-card reveal stagger-5">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">🎯</div>
+                            <div class="skill-name">Target Achievement</div>
+                        </div>
+                        <div class="skill-percentage">96%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="96" style="--skill-width: 96%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 12 -->
+                <div class="skill-card reveal stagger-6">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <div class="skill-icon">💻</div>
+                            <div class="skill-name">IT Marketing</div>
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="80" style="--skill-width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS COUNTERS SECTION ===================== -->
+    <section class="section section-dark" id="achievements">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">✦ Milestones</div>
+                <h2 class="section-title">Key <span class="highlight">Achievements</span></h2>
+                <p class="section-subtitle">Numbers that reflect dedication, hard work, and consistent performance.</p>
+                <div class="gold-divider"></div>
+            </div>
+
+            <!-- Counter Cards -->
+            <div class="achievements-grid">
+                <div class="achievement-card reveal stagger-1">
+                    <div class="achievement-icon">📊</div>
+                    <div class="achievement-number">
+                        <span class="counter" data-target="5">0</span><span class="achievement-suffix"> Cr+</span>
+                    </div>
+                    <div class="achievement-label">Monthly Business Target</div>
+                </div>
+
+                <div class="achievement-card reveal stagger-2">
+                    <div class="achievement-icon">📅</div>
+                    <div class="achievement-number">
+                        <span class="counter" data-target="12">0</span><span class="achievement-suffix">+</span>
+                    </div>
+                    <div class="achievement-label">Years in Finance</div>
+                </div>
+
+                <div class="achievement-card reveal stagger-3">
+                    <div class="achievement-icon">👥</div>
+                    <div class="achievement-number">
+                        <span class="counter" data-target="500">0</span><span class="achievement-suffix">+</span>
+                    </div>
+                    <div class="achievement-label">Clients Served</div>
+                </div>
+
+                <div class="achievement-card reveal stagger-4">
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-number">
+                        <span class="counter" data-target="1000">0</span><span class="achievement-suffix">+</span>
+                    </div>
+                    <div class="achievement-label">Loans Processed</div>
+                </div>
+            </div>
+
+            <!-- Detailed Achievements -->
+            <div class="key-achievements-list" style="margin-top: 60px;">
+                <div class="key-achievement-item reveal stagger-1" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);">
+                    <div class="key-achievement-icon">💎</div>
+                    <div class="key-achievement-text">
+                        <h4 style="color: var(--white);">₹5 Crore Monthly Business</h4>
+                        <p style="color: rgba(255,255,255,0.6);">Successfully achieved approximately ₹5 Crore monthly business targets consistently, demonstrating exceptional sales performance.</p>
+                    </div>
+                </div>
+
+                <div class="key-achievement-item reveal stagger-2" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);">
+                    <div class="key-achievement-icon">👑</div>
+                    <div class="key-achievement-text">
+                        <h4 style="color: var(--white);">Team Leadership Excellence</h4>
+                        <p style="color: rgba(255,255,255,0.6);">Managed and led high-performing finance sales teams, mentoring team members and driving collective success.</p>
+                    </div>
+                </div>
+
+                <div class="key-achievement-item reveal stagger-3" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);">
+                    <div class="key-achievement-icon">🤝</div>
+                    <div class="key-achievement-text">
+                        <h4 style="color: var(--white);">Long-term Client Relationships</h4>
+                        <p style="color: rgba(255,255,255,0.6);">Built and maintained long-term relationships with clients, ensuring repeat business and high referral rates.</p>
+                    </div>
+                </div>
+
+                <div class="key-achievement-item reveal stagger-4" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);">
+                    <div class="key-achievement-icon">📈</div>
+                    <div class="key-achievement-text">
+                        <h4 style="color: var(--white);">Sales Performance & Customer Satisfaction</h4>
+                        <p style="color: rgba(255,255,255,0.6);">Significantly improved sales performance metrics and customer satisfaction scores through strategic planning and execution.</p>
+                    </div>
+                </div>
+
+                <div class="key-achievement-item reveal stagger-5" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08);">
+                    <div class="key-achievement-icon">🎯</div>
+                    <div class="key-achievement-text">
+                        <h4 style="color: var(--white);">Financial Planning & Loan Advisory</h4>
+                        <p style="color: rgba(255,255,255,0.6);">Developed strong expertise in financial planning and loan advisory services, helping hundreds of clients achieve their financial goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">✦ What I Offer</div>
+                <h2 class="section-title">Professional <span class="highlight">Services</span></h2>
+                <p class="section-subtitle">Comprehensive financial services tailored to meet diverse client needs.</p>
+                <div class="gold-divider"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal stagger-1">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">Mortgage Loan Services</h3>
+                    <p class="service-desc">
+                        Expert guidance on mortgage loan products, competitive rates, 
+                        and seamless processing from application to disbursement.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal stagger-2">
+                    <div class="service-icon">🏡</div>
+                    <h3 class="service-title">Home Loan Processing</h3>
+                    <p class="service-desc">
+                        End-to-end home loan processing including documentation, 
+                        verification, approval, and disbursal with personalized support.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal stagger-3">
+                    <div class="service-icon">💼</div>
+                    <h3 class="service-title">Financial Consulting</h3>
+                    <p class="service-desc">
+                        Personalized financial consulting to help individuals and businesses 
+                        make informed decisions about loans, investments, and planning.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card reveal stagger-4">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title">Business Development</h3>
+                    <p class="service-desc">
+                        Strategic business development services including market analysis, 
+                        client acquisition strategies, and growth planning.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card reveal stagger-5">
+                    <div class="service-icon">🤝</div>
+                    <h3 class="service-title">Client Relationship Management</h3>
+                    <p class="service-desc">
+                        Building and maintaining strong client relationships through 
+                        trust, transparency, and consistent service delivery.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card reveal stagger-6">
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title">Loan Documentation</h3>
+                    <p class="service-desc">
+                        Comprehensive loan documentation assistance ensuring all paperwork 
+                        is accurate, complete, and processed efficiently.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">✦ Get In Touch</div>
+                <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Let's discuss how I can help you with your financial goals.</p>
+                <div class="gold-divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info reveal-left">
+                    <h3>Let's <span>Connect</span></h3>
+                    <p>
+                        Whether you need financial consulting, loan advisory, or want to discuss 
+                        a business opportunity, I'm here to help. Reach out and let's start a conversation.
+                    </p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <p>pornima.umbarkar@email.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📱</div>
+                            <div class="contact-item-text">
+                                <h4>Phone</h4>
+                                <p>+91 XXXXX XXXXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div class="contact-item-text">
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🏢</div>
+                            <div class="contact-item-text">
+                                <h4>Company</h4>
+                                <p>UC Service Company</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Print Portfolio Button -->
+                    <button class="btn btn-primary" onclick="window.print()" style="margin-top: 8px;">
+                        <span class="btn-icon">🖨️</span> Print Portfolio / Save as PDF
+                    </button>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper reveal-right">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Your Name</label>
+                                <input type="text" id="contactName" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Your Email</label>
+                                <input type="email" id="contactEmail" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" class="form-control" placeholder="Enter subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" class="form-control" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message ✉</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 <span>Pornima Umbarkar</span>. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP BUTTON ===================== -->
+    <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Scroll to top">↑</button>
+
+    <!-- ===================== JAVASCRIPT ===================== -->
+    <script>
+        /* ============================================
+           NAVIGATION - Scroll Effects & Mobile Menu
+           ============================================ */
+
+        // Elements
+        const navbar = document.getElementById('navbar');
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        const navLinkItems = document.querySelectorAll('.nav-links a');
+        const backToTop = document.getElementById('backToTop');
+
+        // Navbar scroll effect - adds background on scroll
+        function handleNavbarScroll() {
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        // Mobile menu toggle
+        navToggle.addEventListener('click', function () {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+
+        // Close mobile menu on link click
+        navLinkItems.forEach(function (link) {
+            link.addEventListener('click', function () {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+
+        // Active nav link highlighting based on scroll position
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollY = window.scrollY + 100;
+
+            sections.forEach(function (section) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    navLinkItems.forEach(function (link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        /* ============================================
+           BACK TO TOP BUTTON
+           ============================================ */
+        function handleBackToTop() {
+            if (window.scrollY > 400) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        }
+
+        backToTop.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        /* ============================================
+           SCROLL REVEAL ANIMATIONS
+           ============================================ */
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+            const windowHeight = window.innerHeight;
+
+            reveals.forEach(function (element) {
+                const elementTop = element.getBoundingClientRect().top;
+                const revealPoint = 100;
+
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        /* ============================================
+           SKILL BAR ANIMATION
+           ============================================ */
+        let skillsAnimated = false;
+
+        function animateSkillBars() {
+            const skillsSection = document.getElementById('skills');
+            if (!skillsSection) return;
+
+            const sectionTop = skillsSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight - 100 && !skillsAnimated) {
+                const skillBars = document.querySelectorAll('.skill-bar-fill');
+                skillBars.forEach(function (bar) {
+                    const width = bar.getAttribute('data-width');
+                    bar.style.width = width + '%';
+                });
+                skillsAnimated = true;
+            }
+        }
+
+        /* ============================================
+           ACHIEVEMENT COUNTER ANIMATION
+           ============================================ */
+        let countersAnimated = false;
+
+        function animateCounters() {
+            const achievementsSection = document.getElementById('achievements');
+            if (!achievementsSection) return;
+
+            const sectionTop = achievementsSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight - 100 && !countersAnimated) {
+                const counters = document.querySelectorAll('.counter');
+
+                counters.forEach(function (counter) {
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    const duration = 2000; // 2 seconds
+                    const step = target / (duration / 16); // ~60fps
+                    let current = 0;
+
+                    function updateCounter() {
+                        current += step;
+                        if (current < target) {
+                            counter.textContent = Math.ceil(current);
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.textContent = target;
+                        }
+                    }
+
+                    updateCounter();
+                });
+
+                countersAnimated = true;
+            }
+        }
+
+        /* ============================================
+           PROFILE IMAGE UPLOAD
+           ============================================ */
+        const imageUpload = document.getElementById('imageUpload');
+        const profileImage = document.getElementById('profileImage');
+        const profilePlaceholder = document.getElementById('profilePlaceholder');
+
+        imageUpload.addEventListener('change', function (e) {
+            const file = e.target.files[0];
+
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+
+                reader.onload = function (event) {
+                    // Show the uploaded image and hide placeholder
+                    profileImage.src = event.target.result;
+                    profileImage.style.display = 'block';
+                    profilePlaceholder.style.display = 'none';
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+
+        /* ============================================
+           CONTACT FORM HANDLER
+           ============================================ */
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+
+            // Show confirmation (replace with actual form submission)
+            alert(
+                'Thank you, ' + name + '!\n\n' +
+                'Your message has been received. I will get back to you at ' +
+                email + ' as soon as possible.\n\n' +
+                'Subject: ' + (subject || 'No subject') + '\n' +
+                'Message: ' + message.substring(0, 100) + '...'
+            );
+
+            // Reset form
+            document.getElementById('contactForm').reset();
+        }
+
+        /* ============================================
+           SCROLL EVENT LISTENERS
+           ============================================ */
+        window.addEventListener('scroll', function () {
+            handleNavbarScroll();
+            handleBackToTop();
+            updateActiveNavLink();
+            revealOnScroll();
+            animateSkillBars();
+            animateCounters();
+        });
+
+        // Initial calls on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            handleNavbarScroll();
+            revealOnScroll();
+            animateSkillBars();
+            animateCounters();
+        });
+    </script>
+
+</body>
+</html>
