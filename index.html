@@ -1722,7 +1722,24 @@
 
             .section {
                 padding: 40px 0;
+            }
+
+            /* Prevent elements from breaking across pages */
+            .skill-card, 
+            .service-card, 
+            .achievement-card, 
+            .timeline-item, 
+            .key-achievement-item,
+            .about-info-item,
+            .contact-item {
                 page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            /* Add some spacing for print pages */
+            h2.section-title {
+                page-break-after: avoid;
+                break-after: avoid;
             }
 
             .section-dark {
